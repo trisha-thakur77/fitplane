@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Fitness & Diet Planner</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h2>Fitness & Diet Planner</h2>
+<div class="box">
+    <h3>BMI Calculator</h3>
+    <input id="weight" type="number" placeholder="Weight (kg)">
+    <input id="height" type="number" placeholder="Height (cm)">
+    <button onclick="calcBMI()">Calculate BMI</button>
+    <p id="bmiResult"></p>
+</div>
+
+<div class="box">
+    <h3>Water Tracker</h3>
+    <button onclick="addWater()">+1 Glass</button>
+    <p id="waterResult">Glasses: 0</p>
+</div>
+
+<div class="box">
+    <h3>Diet Suggestion</h3>
+    <button onclick="giveDiet()">Get Diet Plan</button>
+    <p id="dietResult"></p>
+</div>
+
+<div class="box">
+    <h3>Workout Suggestion</h3>
+    <button onclick="giveWorkout()">Get Workout Plan</button>
+    <p id="workoutResult"></p>
+</div>
+
+<div class="box">
+    <h3>Daily Calorie Tip</h3>
+    <button onclick="showTip()">Show Tip</button>
+    <p id="tipResult"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
